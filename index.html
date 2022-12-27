@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portofolio Ali</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="img/Logo.png" class="logo" />
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Skills</a></li>
+            <li><a href="#">Hobby</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="header-text">
+          <h1>Hi, I'm Ali <span>Imran</span> Rodja</h1>
+          <p>This my official portofolio Website</p>
+          <br />I'm a Student
+        </div>
+      </div>
+    </div>
+
+    <!-- About -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="img/Ali_imran.png" alt="" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              Saya adalah anak pertama dari 3 bersaudara, nama ayah saya Haji Roja dan ibu saya Salmah, saya berasal dari Ende, NTT. Saya lahir di Cimahi, kenapa saya bisa pindah ke NTT, karena ayah saya berkelahiran NTT. maka dari itu kami
+              sekeluarga sepakat pindah ke NTT. Sekarang saya adalah seorang Mahasiswa di suatu Universitas di Bandung yaitu Universitas Pasundan, yang terletak di Setia Budhi.Saya mengambil Prodi Teknik Informatika.
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('organization')">Organization</p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="organization">
+              <ul>
+                <li><span>Ketua Osis (Organisasi Siswa)</span><br />Periode : 2019-2020</li>
+                <li><span>Wakil Ketua Dewan Kerja Cabang</span><br />Periode : 2019-2020</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>TK :</span><br />At-Thoat</li>
+                <li><span>SD :</span><br />Madrasah Ibtidaiyah Negeri 1 Ende</li>
+                <li><span>SMP :</span><br />Madrasah Tsanawiyah Negeri 1 Ende</li>
+                <li><span>SMA :</span><br />Madrasah Aliyah Negeri Ende</li>
+                <li><span>Kuliah :</span><br />Universitas Pasundan</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Social Media -->
+    <div id="sociamedia">
+      <div class="container">
+        <h1 class="sub-title">Social Media</h1>
+        <div class="socialmedia-list">
+          <div>
+            <i class="fa-brands fa-instagram"></i>
+            <h2>Instagram</h2>
+            <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, tenetur?</p> -->
+            <a href="https://www.instagram.com/aliimrnrdj_/" target="_blank">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-twitter"></i>
+            <h2>Twitter</h2>
+            <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, quos.</p> -->
+            <a href="https://twitter.com/AliRodja" target="_blank">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-facebook"></i>
+            <h2>Facebook</h2>
+            <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, quae!</p> -->
+            <a href="https://www.facebook.com/aliimran.rodja.14/" target="_blank">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-youtube"></i>
+            <h2>Youtube</h2>
+            <!-- <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint, expedita!</p> -->
+            <a href="https://www.youtube.com/channel/UCH-7_5l2s2YQiNY7rmrpVqQ" target="_blank">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- java -->
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+  </body>
+</html>
