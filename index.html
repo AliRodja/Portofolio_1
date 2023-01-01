@@ -7,6 +7,7 @@
     <title>Portofolio Ali</title>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <!-- Navbar -->
@@ -14,13 +15,15 @@
       <div class="container">
         <nav>
           <img src="img/Logo.png" class="logo" />
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Skills</a></li>
-            <li><a href="#">Hobby</a></li>
-            <li><a href="#">Contact</a></li>
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portofolio">Skills</a></li>
+            <li><a href="#socialmedia">Social Media</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fas fa-solid fa-xmark" onclick="closemenu()"></i>
           </ul>
+          <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
         </nav>
         <div class="header-text">
           <h1>Hi, I'm Ali <span>Imran</span> Rodja</h1>
@@ -35,26 +38,26 @@
       <div class="container">
         <div class="row">
           <div class="about-col-1">
-            <img src="img/Ali_imran.png" alt="" />
+            <img data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="2000" src="img/Ali_imran.png" alt="" />
           </div>
           <div class="about-col-2">
             <h1 class="sub-title">About Me</h1>
-            <p>
+            <p data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="2000">
               Saya adalah anak pertama dari 3 bersaudara, nama ayah saya Haji Roja dan ibu saya Salmah, saya berasal dari Ende, NTT. Saya lahir di Cimahi, kenapa saya bisa pindah ke NTT, karena ayah saya berkelahiran NTT. maka dari itu kami
-              sekeluarga sepakat pindah ke NTT. Sekarang saya adalah seorang Mahasiswa di suatu Universitas di Bandung yaitu Universitas Pasundan, yang terletak di Setia Budhi.Saya mengambil Prodi Teknik Informatika.
+              sekeluarga sepakat pindah ke NTT. Sekarang saya adalah seorang Mahasiswa di suatu Universitas di Bandung yaitu Universitas Pasundan, yang terletak di Setia Budhi. Saya mengambil Prodi Teknik Informatika.
             </p>
 
-            <div class="tab-titles">
+            <div class="tab-titles" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="2000">
               <p class="tab-links active-link" onclick="opentab('organization')">Organization</p>
               <p class="tab-links" onclick="opentab('education')">Education</p>
             </div>
-            <div class="tab-contents active-tab" id="organization">
+            <div class="tab-contents active-tab" id="organization" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="2000">
               <ul>
                 <li><span>Ketua Osis (Organisasi Siswa)</span><br />Periode : 2019-2020</li>
                 <li><span>Wakil Ketua Dewan Kerja Cabang</span><br />Periode : 2019-2020</li>
               </ul>
             </div>
-            <div class="tab-contents" id="education">
+            <div class="tab-contents" id="education" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="2000">
               <ul>
                 <li><span>TK :</span><br />At-Thoat</li>
                 <li><span>SD :</span><br />Madrasah Ibtidaiyah Negeri 1 Ende</li>
@@ -68,36 +71,89 @@
       </div>
     </div>
 
+    <!-- Potofolio-->
+    <div id="portofolio">
+      <div class="container">
+        <h1 class="sub-title">My Skills</h1>
+        <div class="skills-list">
+          <div class="skills" data-aos="fade-up-right" data-aos-anchor-placement="top-bottom" data-aos-duration="2000">
+            <img src="img/Skill-1.png" />
+            <div class="layer">
+              <h3>Public Speaking</h3>
+            </div>
+          </div>
+          <div class="skills" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="2000">
+            <img src="https://source.unsplash.com/650x800?cooking" />
+            <div class="layer">
+              <h3>Cooking</h3>
+            </div>
+          </div>
+          <div class="skills" data-aos="fade-up-left" data-aos-anchor-placement="top-bottom" data-aos-duration="2000">
+            <img src="https://source.unsplash.com/650x800?coding" />
+            <div class="layer">
+              <h3>Web Development</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- Social Media -->
-    <div id="sociamedia">
+    <div id="socialmedia">
       <div class="container">
         <h1 class="sub-title">Social Media</h1>
-        <div class="socialmedia-list">
+        <div class="socialmedia-list" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="2000">
           <div>
             <i class="fa-brands fa-instagram"></i>
             <h2>Instagram</h2>
             <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, tenetur?</p> -->
-            <a href="https://www.instagram.com/aliimrnrdj_/" target="_blank">Learn more</a>
+            <a href="https://www.instagram.com/aliimrnrdj_/" target="_blank">Click here</a>
           </div>
           <div>
             <i class="fa-brands fa-twitter"></i>
             <h2>Twitter</h2>
             <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, quos.</p> -->
-            <a href="https://twitter.com/AliRodja" target="_blank">Learn more</a>
+            <a href="https://twitter.com/AliRodja" target="_blank">Click here</a>
           </div>
           <div>
             <i class="fa-brands fa-facebook"></i>
             <h2>Facebook</h2>
             <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, quae!</p> -->
-            <a href="https://www.facebook.com/aliimran.rodja.14/" target="_blank">Learn more</a>
+            <a href="https://www.facebook.com/aliimran.rodja.14/" target="_blank">Click here</a>
           </div>
           <div>
             <i class="fa-brands fa-youtube"></i>
             <h2>Youtube</h2>
             <!-- <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint, expedita!</p> -->
-            <a href="https://www.youtube.com/channel/UCH-7_5l2s2YQiNY7rmrpVqQ" target="_blank">Learn more</a>
+            <a href="https://www.youtube.com/channel/UCH-7_5l2s2YQiNY7rmrpVqQ" target="_blank">Click here</a>
           </div>
         </div>
+        <a href="#" class="btn">See more</a>
+      </div>
+    </div>
+
+    <!-- Contact -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p data-aos="fade-down" data-aos-anchor-placement="top-bottom" data-aos-duration="2000"><i class="fa-solid fa-envelope"></i>rodjaali@gmail.com</p>
+            <p data-aos="fade-down" data-aos-anchor-placement="top-bottom" data-aos-duration="2000"><i class="fa-solid fa-phone"></i>082247733533</p>
+          </div>
+          <div class="contact-right" data-aos="fade-down" data-aos-anchor-placement="top-bottom" data-aos-duration="2000">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input type="email" name="Email" placeholder="Your Email" required />
+              <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright &copy; 2022 - Ali Imran Rodja. All Rights Reserved</p>
       </div>
     </div>
 
@@ -116,6 +172,38 @@
         event.currentTarget.classList.add("active-link");
         document.getElementById(tabname).classList.add("active-tab");
       }
+    </script>
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+    <script>
+      const scriptURL = "https://script.google.com/macros/s/AKfycbwBxpZKL_V3u2HuZWdVH41jKXuLm6oEGXh00Lu8CBYnUrt51er6mSRYFd_JgIcnEUSp/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Message sent successfully";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 5000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
     </script>
   </body>
 </html>
