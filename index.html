@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="fontawesome-free-6.7.2-web/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
   </head>
   <body>
     <!-- Navbar -->
@@ -25,10 +28,10 @@
           </ul>
           <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
         </nav>
-        <div class="header-text">
+        <div class="header-text ">
           <h1>Hi, I'm Ali <span>Imran</span> Rodja</h1>
           <p>This my official portofolio Website</p>
-          <br />I'm a Student
+          <br />I'm a <span style="color: crimson;" class="typing"></span>
         </div>
       </div>
     </div>
@@ -46,7 +49,10 @@
               Saya adalah anak pertama dari 3 bersaudara, nama ayah saya Haji Roja dan ibu saya Salmah, saya berasal dari Ende, NTT. Saya lahir di Cimahi, kenapa saya bisa pindah ke NTT, karena ayah saya berkelahiran NTT. maka dari itu kami
               sekeluarga sepakat pindah ke NTT. Sekarang saya adalah seorang Mahasiswa di suatu Universitas di Bandung yaitu Universitas Pasundan, yang terletak di Setia Budhi. Saya mengambil Prodi Teknik Informatika.
             </p>
-
+            <a href="img/CV Ali Imran Rodja.png" download>
+              <button data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="2000" type="button" class="btn btn2" style="font-size: large;">Download CV</button>
+            </a>
+    
             <div class="tab-titles" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="2000">
               <p class="tab-links active-link" onclick="opentab('organization')">Organization</p>
               <p class="tab-links" onclick="opentab('education')">Education</p>
@@ -83,15 +89,15 @@
             </div>
           </div>
           <div class="skills" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="2000">
-            <img src="https://source.unsplash.com/650x800?cooking" />
+            <img src="img/UI.jpg" style="width: 160%;"/>
             <div class="layer">
-              <h3>Cooking</h3>
+              <h3>Web Design</h3>
             </div>
           </div>
           <div class="skills" data-aos="fade-up-left" data-aos-anchor-placement="top-bottom" data-aos-duration="2000">
             <img src="img/Skill-2.png" />
             <div class="layer">
-              <h3>Web Development</h3>
+              <h3>Junior Developer</h3>
             </div>
           </div>
         </div>
@@ -106,26 +112,38 @@
           <div>
             <i class="fa-brands fa-instagram"></i>
             <h2>Instagram</h2>
-            <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, tenetur?</p> -->
+            
             <a href="https://www.instagram.com/aliimrnrdj_/" target="_blank">Click here</a>
           </div>
           <div>
-            <i class="fa-brands fa-twitter"></i>
-            <h2>Twitter</h2>
-            <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, quos.</p> -->
+            <i class="fa-brands fa-x-twitter"></i>
+            <h2>X</h2>
+            
             <a href="https://twitter.com/AliRodja" target="_blank">Click here</a>
           </div>
           <div>
             <i class="fa-brands fa-facebook"></i>
             <h2>Facebook</h2>
-            <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, quae!</p> -->
+            
             <a href="https://www.facebook.com/aliimran.rodja.14/" target="_blank">Click here</a>
           </div>
           <div>
             <i class="fa-brands fa-youtube"></i>
             <h2>Youtube</h2>
-            <!-- <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint, expedita!</p> -->
+           
             <a href="https://www.youtube.com/channel/UCH-7_5l2s2YQiNY7rmrpVqQ" target="_blank">Click here</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-linkedin"></i>
+            <h2>LinkedIn</h2>
+           
+            <a href="https://www.linkedin.com/in/aliimrnrdj/" target="_blank">Click here</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-github"></i>
+            <h2>GitHub</h2>
+           
+            <a href="https://github.com/AliRodja" target="_blank">Click here</a>
           </div>
         </div>
         <a href="#header" class="btn">See more</a>
@@ -205,5 +223,6 @@
     <script>
       AOS.init();
     </script>
+    <script src="js/script.js"></script>
   </body>
 </html>
