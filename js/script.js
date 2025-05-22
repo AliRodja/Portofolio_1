@@ -1,6 +1,6 @@
 $(document).ready(function() {
     var typed = new Typed(".typing", {
-        strings: ["Web Design", "Student", "Junior Developer", "Freelancer"],
+        strings: ["UI/UX Designer", "Student", "Junior Developer"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
