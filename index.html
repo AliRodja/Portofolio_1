@@ -20,6 +20,7 @@
         <ul id="sidemenu">
           <li><a href="#header">Home</a></li>
           <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
           <li><a href="#portofolio">Skills</a></li>
           <li><a href="#socialmedia">Social Media</a></li>
           <li><a href="#contact">Contact</a></li>
@@ -78,7 +79,62 @@
       </div>
     </div>
 
-    <!-- Potofolio-->
+    <!-- Project -->
+    <div id="projects">
+      <div class="container">
+        <h1 class="sub-title" data-aos="fade-down">My Projects</h1>
+        
+        <div class="project-wrapper">
+          
+          <i id="left-btn" class="fas fa-angle-left"></i>
+
+          <div class="project-container">
+            
+            <div class="project-card" data-aos="zoom-in">
+              <img src="img/Project_1.jpg" alt="Project 1">
+              <div class="project-info">
+                <h3>UI Mobile E-Waste</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, quis.</p>
+                <a href="#" class="btn-card">Lihat Detail</a>
+              </div>
+            </div>
+
+            <div class="project-card" data-aos="zoom-in" data-aos-delay="200">
+              <img src="img/Project_2.jpg" alt="Project 2">
+              <div class="project-info">
+                <h3>UI Dashboard Bank Sampah</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, distinctio?</p>
+                <a href="#" class="btn-card">Lihat Detail</a>
+              </div>
+            </div>
+
+            <div class="project-card" data-aos="zoom-in" data-aos-delay="400">
+              <img src="img/project-3.jpg" alt="Project 3">
+              <div class="project-info">
+                <h3>Landing Page Kampus</h3>
+                <p>Desain landing page responsif untuk promosi pendaftaran mahasiswa baru.</p>
+                <a href="#" class="btn-card">Lihat Detail</a>
+              </div>
+            </div>
+
+            <div class="project-card" data-aos="zoom-in">
+              <img src="img/project-1.jpg" alt="Project 4">
+              <div class="project-info">
+                <h3>Company Profile</h3>
+                <p>Website profil perusahaan konstruksi dengan galeri portofolio dinamis.</p>
+                <a href="#" class="btn-card">Lihat Detail</a>
+              </div>
+            </div>
+
+          </div>
+
+          <i id="right-btn" class="fas fa-angle-right"></i>
+          
+        </div>
+      </div>
+    </div>
+
+    <!-- Skill-->
     <div id="portofolio">
       <div class="container">
         <h1 class="sub-title">My Skills</h1>
@@ -245,6 +301,23 @@
         
       
         lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+      });
+    </script>
+    <script>
+      const projectContainer = document.querySelector('.project-container');
+      const leftBtn = document.getElementById('left-btn');
+      const rightBtn = document.getElementById('right-btn');
+
+      // Saat tombol Kanan diklik
+      rightBtn.addEventListener('click', () => {
+        // Geser ke kanan sejauh 330px (lebar kartu + gap)
+        projectContainer.scrollLeft += 330; 
+      });
+
+      // Saat tombol Kiri diklik
+      leftBtn.addEventListener('click', () => {
+        // Geser ke kiri sejauh 330px
+        projectContainer.scrollLeft -= 330; 
       });
     </script>
     <script src="js/script.js"></script>
