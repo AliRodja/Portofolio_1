@@ -15,7 +15,7 @@
   <body>
     <!-- Navbar -->
     <div id="header">
-      <nav style="position: fixed; width: 100%; padding:  0 100px   0 100px; background-color: rgba(245, 245, 245, 0.781); backdrop-filter: blur(10px); z-index: 999;">
+      <nav style="position: fixed; width: 100%; padding:  0 100px   0 100px; background-color: rgba(245, 245, 245, 0.781); backdrop-filter: blur(8px); z-index: 999;">
         <a href="#header"><img src="img/Logo.png" class="logo" /></a>
         <ul id="sidemenu">
           <li><a href="#header">Home</a></li>
@@ -41,12 +41,12 @@
       <div class="container">
         <div class="row">
           <div class="about-col-1">
-            <img data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="2000" src="img/Ali_imran.png" alt="" />
+            <img data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="2000" src="img/Ali_Imran_Rodja.png" alt="" />
           </div>
           <div class="about-col-2">
             <h1 class="sub-title">About Me</h1>
-            <p data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="2000">
-              Mahasiswa Teknik Informatika semester 6 dengan keahlian di bidang pengembangan front-end dan desain UI/UX. Terampil dalam merancang antarmuka menggunakan teknologi seperti HTML, CSS, JavaScript, serta berbagai framework modern untuk membuat tampilan web yang menarik dan fungsional. Memiliki pengalaman dalam memimpin proyek, mengoordinasikan tim, serta memastikan proyek diselesaikan tepat pada waktunya. Telah mengerjakan beberapa proyek pengembangan website dan terlibat dalam desain UI untuk berbagai proyek lainnya.
+            <p data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="2000" class="paragraf">
+              7th-semester Informatics Engineering student with expertise in front-end development and UI/UX design. Proficient in designing interfaces using technologies such as HTML, CSS, JavaScript, and various modern frameworks to create attractive and functional web displays. Skilled in designing websites using Figma. Possesses experience in leading projects, coordinating teams, and ensuring projects are completed on time. Has completed several website development projects and been involved in UI design for various other projects.
             </p>
             <a href="img/CV Ali Imran Rodja.pdf" download>
               <button data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="2000" type="button" class="btn btn2" style="font-size: large;">Download CV</button>
@@ -61,6 +61,7 @@
                 <li><span>Ketua Osis (Organisasi Siswa)</span><br />Periode : 2019-2020</li>
                 <li><span>Wakil Ketua Dewan Kerja Cabang</span><br />Periode : 2019-2020</li>
                 <li><span>Koordinator Sosial dan Politik (HMTIF)</span><br />Periode : 2024-2025</li>
+                <li><span>Ketua Umum (HMTIF-UNPAS)</span><br />Periode : 2025-2026</li>
               </ul>
             </div>
             <div class="tab-contents" id="education" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="2000">
@@ -83,13 +84,13 @@
         <h1 class="sub-title">My Skills</h1>
         <div class="skills-list">
           <div class="skills" data-aos="fade-up-right" data-aos-anchor-placement="top-bottom" data-aos-duration="2000">
-            <img src="img/Skill-1.png" />
+            <img src="img/IMG_8882.jpeg" />
             <div class="layer">
               <h3>Public Speaking</h3>
             </div>
           </div>
           <div class="skills" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="2000">
-            <img src="img/UI.jpg" style="width: 160%;"/>
+            <img src="img/UI.jpg"/>
             <div class="layer">
               <h3>UI/UX Designer</h3>
             </div>
@@ -97,7 +98,7 @@
           <div class="skills" data-aos="fade-up-left" data-aos-anchor-placement="top-bottom" data-aos-duration="2000">
             <img src="img/Skill-2.png" />
             <div class="layer">
-              <h3>Front-End Developer</h3>
+              <h3>Junior Web Developer</h3>
             </div>
           </div>
         </div>
@@ -171,7 +172,7 @@
         </div>
       </div>
       <div class="copyright">
-        <p>Copyright &copy; 2022 - Ali Imran Rodja. All Rights Reserved</p>
+        <p>Copyright &copy; 2025 - Ali Imran Rodja. All Rights Reserved</p>
       </div>
     </div>
 
@@ -222,6 +223,29 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
+    </script>
+    <script>
+      let lastScrollTop = 0;
+      const navbar = document.querySelector("nav"); // Mengambil elemen <nav>
+
+
+      navbar.style.transition = "top 0.4s ease-in-out";
+
+      window.addEventListener("scroll", function() {
+        
+        let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+        if (scrollTop > lastScrollTop) {
+          
+          navbar.style.top = "-150px"; 
+        } else {
+          
+          navbar.style.top = "0";
+        }
+        
+      
+        lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+      });
     </script>
     <script src="js/script.js"></script>
   </body>
