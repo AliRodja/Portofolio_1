@@ -1,13 +1,9 @@
-/* ==========================================================
-   PORTFOLIO ALI IMRAN RODJA — Main JavaScript
-   Pure vanilla JS — no jQuery dependency
-   ========================================================== */
+
 
 document.addEventListener('DOMContentLoaded', () => {
 
-  /* ----------------------------------------------------------
-     1. PRELOADER
-     ---------------------------------------------------------- */
+  /*      1. PRELOADER
+    */
   const preloader = document.getElementById('preloader');
   window.addEventListener('load', () => {
     setTimeout(() => {
@@ -19,9 +15,8 @@ document.addEventListener('DOMContentLoaded', () => {
     preloader.classList.add('loaded');
   }, 3000);
 
-  /* ----------------------------------------------------------
-     2. DARK MODE TOGGLE
-     ---------------------------------------------------------- */
+  /*      2. DARK MODE TOGGLE
+    */
   const themeToggle = document.getElementById('theme-toggle');
   const htmlEl = document.documentElement;
 
@@ -40,9 +35,8 @@ document.addEventListener('DOMContentLoaded', () => {
     localStorage.setItem('theme', newTheme);
   });
 
-  /* ----------------------------------------------------------
-     3. NAVBAR — Hide on scroll down, show on scroll up
-     ---------------------------------------------------------- */
+  /*      3. NAVBAR — Hide on scroll down, show on scroll up
+    */
   const navbar = document.getElementById('navbar');
   let lastScrollY = 0;
   let ticking = false;
@@ -75,9 +69,8 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  /* ----------------------------------------------------------
-     4. MOBILE MENU
-     ---------------------------------------------------------- */
+  /*      4. MOBILE MENU
+    */
   const navLinks = document.getElementById('navLinks');
   const menuToggle = document.getElementById('menu-toggle');
   const navClose = document.getElementById('nav-close');
@@ -107,9 +100,8 @@ document.addEventListener('DOMContentLoaded', () => {
     link.addEventListener('click', closeMenu);
   });
 
-  /* ----------------------------------------------------------
-     5. TIMELINE TAB SWITCHING
-     ---------------------------------------------------------- */
+  /*      5. TIMELINE TAB SWITCHING
+    */
   const tabBtns = document.querySelectorAll('.tab-btn');
   const timelines = document.querySelectorAll('.timeline');
 
@@ -127,9 +119,8 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  /* ----------------------------------------------------------
-     6. BACK TO TOP BUTTON
-     ---------------------------------------------------------- */
+  /*      6. BACK TO TOP BUTTON
+    */
   const backToTop = document.getElementById('back-to-top');
 
   const toggleBackToTop = () => {
@@ -146,9 +137,8 @@ document.addEventListener('DOMContentLoaded', () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   });
 
-  /* ----------------------------------------------------------
-     7. COUNTER ANIMATION (Intersection Observer)
-     ---------------------------------------------------------- */
+  /*      7. COUNTER ANIMATION (Intersection Observer)
+    */
   const statNumbers = document.querySelectorAll('.stat-number');
   let countersStarted = false;
 
@@ -187,9 +177,8 @@ document.addEventListener('DOMContentLoaded', () => {
     observer.observe(statsSection);
   }
 
-  /* ----------------------------------------------------------
-     8. ACTIVE NAV LINK — Scroll spy
-     ---------------------------------------------------------- */
+  /*      8. ACTIVE NAV LINK — Scroll spy
+    */
   const sections = document.querySelectorAll('section[id]');
   const navLinkItems = document.querySelectorAll('.nav-links li a');
 
@@ -215,9 +204,8 @@ document.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('scroll', updateActiveNav);
   updateActiveNav(); // Run once on load
 
-  /* ----------------------------------------------------------
-     9. CONTACT FORM — Submit to Google Sheet
-     ---------------------------------------------------------- */
+  /*      9. CONTACT FORM — Submit to Google Sheet
+    */
   const scriptURL = 'https://script.google.com/macros/s/AKfycbwBxpZKL_V3u2HuZWdVH41jKXuLm6oEGXh00Lu8CBYnUrt51er6mSRYFd_JgIcnEUSp/exec';
   const form = document.forms['submit-to-google-sheet'];
   const msg = document.getElementById('msg');
@@ -250,9 +238,8 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  /* ----------------------------------------------------------
-     10. TYPED.JS INITIALIZATION
-     ---------------------------------------------------------- */
+  /*      10. TYPED.JS INITIALIZATION
+    */
   if (typeof Typed !== 'undefined') {
     new Typed('.typing', {
       strings: ['UI/UX Designer', 'Student', 'Junior Developer'],
@@ -262,9 +249,8 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  /* ----------------------------------------------------------
-     11. AOS INITIALIZATION
-     ---------------------------------------------------------- */
+  /*      11. AOS INITIALIZATION
+    */
   if (typeof AOS !== 'undefined') {
     AOS.init({
       once: true,
